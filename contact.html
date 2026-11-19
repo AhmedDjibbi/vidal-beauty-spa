@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vidal Beauty &amp; Spa | Sanctuaire Haute Beauté &amp; Massothérapie</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#ded9d4",
+            "on-secondary-fixed": "#111f11",
+            "on-tertiary": "#ffffff",
+            "on-secondary-container": "#586755",
+            "on-primary-fixed": "#261900",
+            "inverse-primary": "#e9c176",
+            "surface-container-high": "#ece7e2",
+            "surface-container-highest": "#e6e2dd",
+            "on-secondary-fixed-variant": "#3c4b3a",
+            "inverse-on-surface": "#f5f0eb",
+            "surface-tint": "#775a19",
+            "surface-container": "#f2ede8",
+            "on-surface": "#1d1b19",
+            "primary-fixed": "#ffdea5",
+            "surface-bright": "#fef8f3",
+            "on-tertiary-container": "#233a65",
+            "on-tertiary-fixed-variant": "#304671",
+            "primary-fixed-dim": "#e9c176",
+            "tertiary-fixed-dim": "#b0c6f9",
+            "primary-container": "#c5a059",
+            "surface": "#fef8f3",
+            "background": "#fef8f3",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "on-error-container": "#93000a",
+            "surface-container-low": "#f8f3ee",
+            "on-primary-fixed-variant": "#5d4201",
+            "secondary-fixed-dim": "#bbcbb6",
+            "secondary": "#536251",
+            "on-surface-variant": "#4e4639",
+            "tertiary-container": "#8fa5d6",
+            "surface-variant": "#e6e2dd",
+            "on-primary-container": "#4e3700",
+            "on-background": "#1d1b19",
+            "surface-container-lowest": "#ffffff",
+            "inverse-surface": "#32302d",
+            "on-primary": "#ffffff",
+            "tertiary-fixed": "#d8e2ff",
+            "outline-variant": "#d1c5b4",
+            "tertiary": "#485e8b",
+            "on-tertiary-fixed": "#001a41",
+            "outline": "#7f7667",
+            "secondary-fixed": "#d7e7d1",
+            "secondary-container": "#d4e4ce",
+            "primary": "#775a19"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-lg": "1.75rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem",
+            "margin-tablet": "2.5rem",
+            "gutter-mobile": "1rem",
+            "margin": "4rem",
+            "space-xl": "3rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "title-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .travertine-halo {
+      box-shadow: 0 16px 40px -12px rgba(28, 25, 23, 0.08), 0 2px 8px -2px rgba(197, 160, 89, 0.06);
+    }
+    .glass-frosted-thermal {
+      background: rgba(245, 240, 235, 0.78);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(197, 160, 89, 0.25);
+    }
+    .brass-inset-border {
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- ========================================================================= -->
+<!-- FLOATING NAVIGATION BAR (Over Hero Background)                           -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="main-nav">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-md">
+<div class="flex items-center justify-between px-6 py-3.5 rounded-lg bg-surface/75 dark:bg-inverse-surface/80 backdrop-blur-md border border-outline-variant/30 shadow-sm transition-all duration-300">
+<!-- Brand Identity Anchor -->
+<a class="group flex flex-col" href="#hero">
+<span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface hover:text-primary transition-colors">
+            VIDAL BEAUTY &amp; SPA
+          </span>
+<span class="font-label-caps text-[9px] tracking-[0.2em] uppercase text-outline">
+            SANCTUAIRE HAUTE BEAUTÉ
+          </span>
+</a>
+<!-- Desktop Navigation Cluster -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-primary border-b border-primary pb-0.5 font-title-md text-sm transition-colors duration-200" href="#hero">
+            Sanctuaire
+          </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#philosophie">
+            Philosophie
+          </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#rituels">
+            Rituels
+          </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#espaces">
+            Architecture
+          </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#conciergerie">
+            Conciergerie
+          </a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-flex items-center justify-center p-2 rounded text-on-surface-variant hover:text-primary transition-colors" href="#conciergerie" title="Consulter disponibilités">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</a>
+<a class="hidden sm:inline-flex items-center justify-center p-2 rounded text-on-surface-variant hover:text-primary transition-colors" href="#rituels" title="Rituels botaniques">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+</a>
+<a class="inline-flex items-center justify-center px-5 py-2.5 bg-primary-container hover:bg-[#b89045] text-on-primary-container font-label-caps text-label-caps tracking-widest uppercase rounded transition-all duration-300 shadow-sm hover:shadow-md brass-inset-border" href="#reservation">
+            Prendre Rendez-vous
+          </a>
+</div>
+</div>
+</div>
+</header>
+<main><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-surface-dim/40" id="hero">
+<!-- Ambient glowing backdrop circles -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/15 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-32 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin relative z-10">
+<div class="max-w-3xl">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-[0.25em] block mb-4">
+          Conciergerie &amp; Réservations Privées
+        </span>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface mb-6 font-light tracking-tight">
+          Votre Sanctuaire d'Exception
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+          Chaque voyage sensoriel commence par une écoute attentive. Laissez notre conciergerie dessiner pour vous un protocole sur-mesure, harmonisé selon vos rythmes biologiques et vos aspirations esthétiques.
+        </p>
+</div>
+</div>
+</section>
+<!-- Main Reservation & Info Section (Bento / Grid Layout) -->
+<section class="py-16 md:py-24 max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin w-full" id="conciergerie">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Interactive Booking Form (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-8 md:p-12 travertin-halo relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="mb-10">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest block mb-2">
+            Protocole de Réservation
+          </span>
+<h2 class="font-headline-md md:text-headline-lg text-headline-lg-mobile text-on-surface">
+            Demande d'Immersion
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Veuillez renseigner vos préférences. Notre maître de céans vous contactera sous deux heures pour valider votre venue.
+          </p>
+</div>
+<form class="space-y-6" id="reservation-form" onsubmit="event.preventDefault(); showSuccessModal();">
+<!-- Name & Phone Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block">
+                Nom &amp; Prénom <span class="text-primary">*</span>
+</label>
+<input class="w-full bg-surface border border-outline-variant/50 rounded px-4 py-3 text-on-surface text-sm focus:border-primary focus:ring-0 transition-colors placeholder:text-outline/60" placeholder="ex. Comtesse de Valmont" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block">
+                Téléphone / WhatsApp <span class="text-primary">*</span>
+</label>
+<input class="w-full bg-surface border border-outline-variant/50 rounded px-4 py-3 text-on-surface text-sm focus:border-primary focus:ring-0 transition-colors placeholder:text-outline/60" placeholder="+33 6 00 00 00 00" required="" type="tel"/>
+</div>
+</div>
+<!-- Email & Preferred Date -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block">
+                Courriel <span class="text-primary">*</span>
+</label>
+<input class="w-full bg-surface border border-outline-variant/50 rounded px-4 py-3 text-on-surface text-sm focus:border-primary focus:ring-0 transition-colors placeholder:text-outline/60" placeholder="votre@domaine.com" required="" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block">
+                Date Souhaitée <span class="text-primary">*</span>
+</label>
+<input class="w-full bg-surface border border-outline-variant/50 rounded px-4 py-3 text-on-surface text-sm focus:border-primary focus:ring-0 transition-colors" required="" type="date"/>
+</div>
+</div>
+<!-- Service Selection -->
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block">
+              Rituel ou Soin Désiré <span class="text-primary">*</span>
+</label>
+<select class="w-full bg-surface border border-outline-variant/50 rounded px-4 py-3 text-on-surface text-sm focus:border-primary focus:ring-0 transition-colors" required="">
+<option disabled="" selected="" value="">Sélectionnez une expérience sensorielle</option>
+<option value="basalte">Protocole Basalte &amp; Pierres Chaudes (90 min)</option>
+<option value="botanique">Soin Visage Infusion Botanique &amp; Calacatta (75 min)</option>
+<option value="drainage">Drainage Lymphe Pro &amp; Eaux Thermales (60 min)</option>
+<option value="signature">Immersion Totale 'Sanctuaire Vidal' (180 min)</option>
+</select>
+</div>
+<!-- Circadian Window Selection (Interactive Chips) -->
+<div class="space-y-3 pt-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block">
+              Fenêtre Circadienne (Moment de la journée)
+            </label>
+<div class="grid grid-cols-3 gap-4">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="circadian" type="radio" value="aurore"/>
+<div class="p-4 rounded-lg bg-surface border border-outline-variant/40 peer-checked:border-primary peer-checked:bg-primary-container/10 transition-all text-center">
+<span class="material-symbols-outlined text-primary mb-1 block">wb_sunny</span>
+<span class="font-title-md text-xs uppercase tracking-wider block text-on-surface">Aurore</span>
+<span class="font-body-sm text-[11px] text-outline">09h00 – 12h00</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="circadian" type="radio" value="zenith"/>
+<div class="p-4 rounded-lg bg-surface border border-outline-variant/40 peer-checked:border-primary peer-checked:bg-primary-container/10 transition-all text-center">
+<span class="material-symbols-outlined text-primary mb-1 block">light_mode</span>
+<span class="font-title-md text-xs uppercase tracking-wider block text-on-surface">Zénith</span>
+<span class="font-body-sm text-[11px] text-outline">13h00 – 16h00</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="circadian" type="radio" value="crepuscule"/>
+<div class="p-4 rounded-lg bg-surface border border-outline-variant/40 peer-checked:border-primary peer-checked:bg-primary-container/10 transition-all text-center">
+<span class="material-symbols-outlined text-primary mb-1 block">nights_stay</span>
+<span class="font-title-md text-xs uppercase tracking-wider block text-on-surface">Crépuscule</span>
+<span class="font-body-sm text-[11px] text-outline">17h00 – 20h00</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Custom Requests / Sensitivities -->
+<div class="space-y-2 pt-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider block">
+              Sensibilités Cutanées ou Requêtes Particulières
+            </label>
+<textarea class="w-full bg-surface border border-outline-variant/50 rounded px-4 py-3 text-on-surface text-sm focus:border-primary focus:ring-0 transition-colors placeholder:text-outline/60" placeholder="Allergies aux huiles essentielles, préférences de pression, attention particulière..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full py-4 bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase rounded hover:bg-[#b89045] transition-all duration-300 shadow-md hover:shadow-lg brass-inset-border flex items-center justify-center space-x-3" type="submit">
+<span class="material-symbols-outlined text-sm">spa</span>
+<span>Soumettre la Demande de Réservation</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Right Column: Practical Info Bento & Map (4 cols) -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Operating Hours Card -->
+<div class="bg-surface-container-low rounded-xl p-6 md:p-8 travertin-halo">
+<div class="flex items-center space-x-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">schedule</span>
+<h3 class="font-headline-sm text-on-surface">Horaires du Sanctuaire</h3>
+</div>
+<ul class="space-y-4 font-body-sm text-on-surface-variant">
+<li class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
+<span class="font-medium text-on-surface">Lundi – Vendredi</span>
+<span class="text-primary font-semibold">09h00 – 20h00</span>
+</li>
+<li class="flex justify-between items-center pb-3 border-b border-outline-variant/30">
+<span class="font-medium text-on-surface">Samedi</span>
+<span class="text-primary font-semibold">09h30 – 21h00</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="font-medium text-on-surface">Dimanche (Sur Invitation)</span>
+<span class="text-primary font-semibold">10h00 – 18h00</span>
+</li>
+</ul>
+</div>
+<!-- Contact & Hotline Card -->
+<div class="bg-surface-container-low rounded-xl p-6 md:p-8 travertin-halo">
+<div class="flex items-center space-x-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">support_agent</span>
+<h3 class="font-headline-sm text-on-surface">Ligne Directe &amp; Valet</h3>
+</div>
+<div class="space-y-4 font-body-sm text-on-surface-variant">
+<div class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">location_on</span>
+<div>
+<strong class="text-on-surface block mb-0.5">Adresse Principale</strong>
+                42 Avenue Montaigne, 75008 Paris, France
+              </div>
+</div>
+<div class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">call</span>
+<div>
+<strong class="text-on-surface block mb-0.5">Téléphone / WhatsApp</strong>
+                +33 1 42 68 00 00
+              </div>
+</div>
+<div class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">local_parking</span>
+<div>
+<strong class="text-on-surface block mb-0.5">Service Valet Privé</strong>
+                Prise en charge de votre véhicule à l'entrée de l'Avenue Montaigne par nos concierges dédiés.
+              </div>
+</div>
+</div>
+</div>
+<!-- Aesthetic Map / Directions Card -->
+<div class="bg-surface-container-low rounded-xl p-6 md:p-8 travertin-halo overflow-hidden">
+<div class="flex items-center space-x-3 mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">map</span>
+<h3 class="font-headline-sm text-on-surface">Accès &amp; Cartographie</h3>
+</div>
+<p class="font-body-sm text-on-surface-variant mb-4">
+            Niché au cœur du Triangle d'Or parisien, notre sanctuaire offre une discrétion absolue loin de l'effervescence urbaine.
+          </p>
+<div class="w-full h-48 bg-cover bg-center rounded-lg border border-outline-variant/30 mb-4" data-alt="An artistic high-contrast map rendering of Avenue Montaigne in Paris with golden coordinates, warm travertine minimalist aesthetic, soft ambient lighting, and subtle luxury branding annotations." data-location="42 Avenue Montaigne, 75008 Paris" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOO__A7jaBd7ayGRLjsUSDUzflLedMvx7NbpHnMOGJ4u22kg7rjKZzJfX0j_5JssWd-G7SR1cOwkR0jgRJtFcItemYfIlhJDSsiESwHl_C3AO54zAxasHMNgkxVQNoRSFyvF5WzQYdww_7ZoTXzp26rAqNJIqkL50YN0CZNRImx2yqx04lM9adUXW_PTS4KzZAhs5cnA05u08XLUBGZbRu_t12XYFjG3pC4kcIfgckBIx0py8YTJmVjnP9BCT2iv6S7_HPCwkFaWf-')"></div>
+<div class="flex items-center justify-between text-xs text-outline font-label-caps uppercase tracking-wider">
+<span>Métro: Franklin D. Roosevelt</span>
+<span>GPS: 48.8656° N, 2.3080° E</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Modal Overlay (Hidden by default, triggered by JS) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="success-modal">
+<div class="bg-surface-container-lowest max-w-md w-full mx-4 p-8 rounded-xl travertin-halo text-center transform scale-95 transition-transform duration-300" id="success-modal-content">
+<div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center mx-auto mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-3">Demande Transmise avec Succès</h3>
+<p class="font-body-sm text-on-surface-variant mb-6 leading-relaxed">
+        Votre demande d'immersion a été reçue par notre maître de céans. Nous vous contacterons dans les plus brefs délais pour confirmer l'heure de votre protocole.
+      </p>
+<button class="w-full py-3 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest rounded hover:bg-[#b89045] transition-colors" onclick="hideSuccessModal()">
+        Fermer
+      </button>
+</div>
+</div>
+<!-- Interactive script for modal toggle -->
+<script>
+    function showSuccessModal() {
+      const modal = document.getElementById('success-modal');
+      const content = document.getElementById('success-modal-content');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+    }
+
+    function hideSuccessModal() {
+      const modal = document.getElementById('success-modal');
+      const content = document.getElementById('success-modal-content');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+      document.getElementById('reservation-form').reset();
+    }
+  </script>
+</div></main>
+<!-- ========================================================================= -->
+<!-- LUXURY FOOTER                                                             -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-surface-container-highest border-t border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
+<!-- Brand Signature Column -->
+<div class="lg:col-span-2">
+<span class="font-headline-md text-headline-md tracking-widest uppercase text-on-surface block mb-3 font-display-hero">
+            VIDAL BEAUTY &amp; SPA
+          </span>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest block mb-4">
+            SANCTUAIRE MINÉRAL DE MASSOTHÉRAPIE
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm leading-relaxed mb-6">
+            La quintessence du bien-être européen : alliances d'extraits botaniques purs, d'eaux thermales magnésiennes et de l'architecture contemplative du travertin.
+          </p>
+<div class="flex space-x-4 text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-200" href="index.html" title="Instagram Journal">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+<a class="hover:text-primary transition-colors duration-200" href="index.html" title="Éditions Sonores Serenity">
+<span class="material-symbols-outlined text-lg">volume_up</span>
+</a>
+<a class="hover:text-primary transition-colors duration-200" href="index.html" title="Contact Email">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1: Sanctuaire -->
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-semibold tracking-wider block mb-4">
+            Sanctuaire
+          </span>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-200" href="#philosophie">Heritage &amp; Ethos</a></li>
+<li><a class="hover:text-primary transition-colors duration-200" href="#espaces">Thermal Pavilions</a></li>
+<li><a class="hover:text-primary transition-colors duration-200" href="#philosophie">Dermatological Science</a></li>
+<li><a class="hover:text-primary transition-colors duration-200" href="#espaces">Acoustic Architecture</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Rituels & Soins -->
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-semibold tracking-wider block mb-4">
+            Rituels
+          </span>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-200" href="#rituels">Basalte &amp; Pierres Chaudes</a></li>
+<li><a class="hover:text-primary transition-colors duration-200" href="#rituels">Infusions Botaniques</a></li>
+<li><a class="hover:text-primary transition-colors duration-200" href="#rituels">Drainage Lymphe Pro</a></li>
+<li><a class="hover:text-primary transition-colors duration-200" href="#reservation">Private Consultations</a></li>
+</ul>
+</div>
+<!-- Newsletter Column: Le Cercle Vidal -->
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-semibold tracking-wider block mb-4">
+            Le Cercle Vidal
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+            Recevez nos correspondances botaniques de saison et nos invitations privées d'immersion.
+          </p>
+<form class="space-y-2" onsubmit="event.preventDefault(); alert('Bienvenue dans Le Cercle Vidal.');">
+<input class="w-full bg-surface border border-outline-variant/60 rounded px-3 py-2 text-on-surface placeholder:text-outline text-xs focus:border-primary-container focus:ring-0" placeholder="Votre adresse courriel" required="" type="email"/>
+<button class="w-full py-2 bg-primary text-white font-label-caps text-[10px] uppercase tracking-widest rounded hover:bg-[#5d4201] transition-colors brass-inset-border" type="submit">
+              Rejoindre le Cercle
+            </button>
+</form>
+</div>
+</div>
+<!-- Legal & Copyright Bar -->
+<div class="pt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-xs text-on-surface-variant">
+<p>© 2025 Aura Mineral Wellness Sanctuary. All rights reserved.</p>
+<div class="flex flex-wrap gap-6">
+<a class="hover:text-primary transition-colors duration-200" href="index.html">Privacy Protocol</a>
+<a class="hover:text-primary transition-colors duration-200" href="index.html">Terms of Sanctuary</a>
+<a class="hover:text-primary transition-colors duration-200" href="index.html">Mentions Légales</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Vanilla Interaction: Navbar Scroll Stlying -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.getElementById('main-nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          nav.classList.add('backdrop-blur-lg', 'bg-surface/90', 'shadow-md');
+        } else {
+          nav.classList.remove('backdrop-blur-lg', 'bg-surface/90', 'shadow-md');
+        }
+      });
+    });
+  </script>
+</body></html>
