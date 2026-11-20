@@ -49,68 +49,62 @@
 <!-- ========================================================================= -->
 <!-- FLOATING NAVIGATION BAR (Over Hero Background)                           -->
 <!-- ========================================================================= -->
-<header class="relative w-full z-50 transition-all duration-300" id="main-nav">
-<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-md">
-<div class="flex items-center justify-between px-6 py-3.5 rounded-lg bg-surface/75 dark:bg-inverse-surface/80 backdrop-blur-md border border-outline-variant/30 shadow-sm transition-all duration-300">
-<!-- Brand Identity Anchor -->
-<a class="group flex flex-col" href="#hero">
-<span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface hover:text-primary transition-colors">
-            VIDAL BEAUTY &amp; SPA
-          </span>
-<span class="font-label-caps text-[9px] tracking-[0.2em] uppercase text-outline">
-            SANCTUAIRE HAUTE BEAUTÉ
-          </span>
-</a>
-<!-- Desktop Navigation Cluster -->
-<nav class="hidden md:flex items-center space-x-8">
-<a class="text-primary border-b border-primary pb-0.5 font-title-md text-sm transition-colors duration-200" href="#hero">
-            Sanctuaire
-          </a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#philosophie">
-            Philosophie
-          </a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#rituels">
-            Rituels
-          </a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#espaces">
-            Architecture
-          </a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-sm" href="#conciergerie">
-            Conciergerie
-          </a>
-</nav>
-<!-- Trailing Actions -->
-<div class="flex items-center space-x-4">
-<a class="hidden sm:inline-flex items-center justify-center p-2 rounded text-on-surface-variant hover:text-primary transition-colors" href="#conciergerie" title="Consulter disponibilités">
-<span class="material-symbols-outlined text-[20px]">calendar_today</span>
-</a>
-<a class="hidden sm:inline-flex items-center justify-center p-2 rounded text-on-surface-variant hover:text-primary transition-colors" href="#rituels" title="Rituels botaniques">
-<span class="material-symbols-outlined text-[20px]">spa</span>
-</a>
-<a class="inline-flex items-center justify-center px-5 py-2.5 bg-primary-container hover:bg-[#b89045] text-on-primary-container font-label-caps text-label-caps tracking-widest uppercase rounded transition-all duration-300 shadow-sm hover:shadow-md brass-inset-border" href="#reservation">
-            Prendre Rendez-vous
-          </a>
-</div>
-</div>
-</div>
-<!-- Mobile Navigation -->
+<header class="relative w-full z-50 transition-all duration-300 backdrop-blur-md bg-surface/80 dark:bg-inverse-surface/80 shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-md">
 <details class="mobile-only-menu relative z-50" style="display:none;">
   <summary class="list-none cursor-pointer inline-flex items-center justify-center px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-variant/50 transition-colors">
     <span class="material-symbols-outlined text-2xl">menu</span>
   </summary>
-  <nav class="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-xl border border-outline-variant/30 py-2 flex flex-col overflow-hidden">
-    <a class="px-4 py-3 text-primary hover:text-[#b89045] hover:bg-primary/5 transition-colors font-medium" href="index.html">Home</a>
-    <a class="px-4 py-3 text-primary hover:text-[#b89045] hover:bg-primary/5 transition-colors font-medium" href="services.html">Services</a>
-    <a class="px-4 py-3 text-primary hover:text-[#b89045] hover:bg-primary/5 transition-colors font-medium" href="index.html#rituels">Rituals</a>
-    <a class="px-4 py-3 text-primary hover:text-[#b89045] hover:bg-primary/5 transition-colors font-medium" href="index.html#architecture">Architecture</a>
-    <a class="px-4 py-3 text-primary hover:text-[#b89045] hover:bg-primary/5 transition-colors font-medium" href="contact.html">Contact</a>
-    <div class="px-3 pt-2 pb-3">
-      <a class="block w-full text-center bg-primary-container hover:bg-[#b89045] text-on-primary-container font-label-caps text-label-caps px-4 py-3 rounded-lg transition-all duration-300 shadow-sm" href="#reservation">
-        Prendre rendez-vous
-      </a>
-    </div>
+  <nav class="absolute right-0 top-full mt-2 w-48 bg-surface/95 backdrop-blur-md rounded-lg shadow-lg border border-outline-variant/30 py-2 flex flex-col">
+    <a class="px-4 py-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="index.html">Home</a>
+    <a class="px-4 py-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="services.html">Services</a>
+    <a class="px-4 py-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="#rituels">Rituals</a>
+    <a class="px-4 py-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="#architecture">Architecture</a>
+    <a class="px-4 py-2 text-on-surface-variant hover:text-primary hover:bg-surface-variant/50" href="contact.html">Contact</a>
   </nav>
 </details>
+<!-- Brand Logo Anchor -->
+<a class="flex flex-col group text-left" href="index.html">
+<span class="font-headline-sm text-headline-sm tracking-wider uppercase text-on-surface dark:text-inverse-on-surface font-semibold group-hover:text-primary transition-colors">
+          VIDAL BEAUTY &amp; SPA
+        </span>
+<span class="font-label-caps text-label-caps tracking-[0.25em] text-outline text-[9px] uppercase mt-0.5">
+          SANCTUAIRE MINÉRAL &amp; THERMAL
+        </span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-primary dark:text-primary-fixed-dim border-b border-primary dark:border-primary-fixed-dim pb-1 font-title-md transition-colors duration-200" href="index.html">
+          Home
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-body-md text-body-md transition-colors duration-200" href="services.html">
+          Services
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-body-md text-body-md transition-colors duration-200" href="#rituels">
+          Rituals
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-body-md text-body-md transition-colors duration-200" href="#architecture">
+          Architecture
+        </a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-body-md text-body-md transition-colors duration-200" href="contact.html">
+          Contact
+        </a>
+</nav>
+<!-- Trailing Action Icons & Primary CTA -->
+<div class="flex items-center space-x-4">
+<a aria-label="Calendrier des disponibilités" class="hidden sm:inline-flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-variant/50 transition-colors" href="#booking">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</a>
+<a aria-label="Nos soins de spa" class="hidden sm:inline-flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-variant/50 transition-colors" href="#rituels">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+</a>
+<a class="hidden sm:inline-flex items-center justify-center bg-primary-container hover:bg-[#b89045] text-on-primary-container font-label-caps text-label-caps px-5 py-2.5 rounded-lg transition-all duration-300 shadow-sm hover:shadow hover:scale-[1.01] tracking-widest uppercase" href="#booking">
+          PRENDRE RENDEZ-VOUS
+        </a>
+</div>
+</div>
+<!-- Mobile Navigation -->
+
 </header>
 <main><div class="flex flex-col w-full">
 <!-- Hero Section -->
