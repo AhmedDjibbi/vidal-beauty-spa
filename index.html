@@ -39,6 +39,7 @@
     .brass-inset {
       box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
     }
+      @media (max-width: 767px) { .mobile-only-menu { display: block !important; } }
   </style>
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -91,7 +92,7 @@
 </div>
 </div>
 <!-- Mobile Navigation -->
-<details class="md:hidden relative z-50">
+<details class="mobile-only-menu relative z-50" style="display:none;">
   <summary class="list-none cursor-pointer inline-flex items-center justify-center px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-variant/50 transition-colors font-label-caps text-label-caps tracking-widest uppercase text-[11px]">
     Menu
   </summary>
