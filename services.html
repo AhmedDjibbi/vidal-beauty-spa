@@ -74,7 +74,7 @@
   </div>
 </aside>
 <script>
-(function(){
+document.addEventListener('DOMContentLoaded',function(){
   var btn=document.getElementById('menuBtn');
   var drawer=document.getElementById('menuDrawer');
   var backdrop=document.getElementById('menuBackdrop');
@@ -85,7 +85,7 @@
   if(closeBtn)closeBtn.addEventListener('click',close);
   if(backdrop)backdrop.addEventListener('click',close);
   document.querySelectorAll('#menuDrawer a').forEach(function(a){a.addEventListener('click',close);});
-})();
+});
 </script>
 <!-- Brand Logo Anchor -->
 <a class="flex flex-col group text-left" href="index.html">
